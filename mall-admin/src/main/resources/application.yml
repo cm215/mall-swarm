@@ -18,7 +18,7 @@ spring:
         login-username: druid
         login-password: druid
   redis:
-    host: 127.0.01 # Redis服务器地址
+    host: 127.0.0.1 # Redis服务器地址
     database: 15 # Redis数据库索引（默认为0）
     port: 6379 # Redis服务器连接端口
     password: heihei # Redis服务器连接密码（默认为空）
@@ -73,6 +73,6 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 5000
-        readTimeout: 5000
+        connectTimeout: 45000
+        readTimeout: 45000
         loggerLevel: basic
